@@ -188,27 +188,27 @@ Sistem otomatis mendeteksi suara latar belakang untuk menghindari false positive
 ## 🎨 Screenshot
 
 ### Tampilan Utama
-![Tampilan Utama](Screenshoots/web-main.png)
+![Tampilan Utama](Screenshots/web-main.png)
 *Interface utama dengan tombol mikrofon besar dan mudah digunakan*
 
 ### Saat Mendengarkan
-![Saat Mendengarkan](Screenshoots/web-listening.png)
+![Saat Mendengarkan](Screenshots/web-listening.png)
 *Indikator visual saat sistem mendengarkan perintah suara*
 
 ### Hasil Deteksi - Buka Pintu
-![Hasil Buka Pintu](Screenshoots/web-result1.png)
+![Hasil Buka Pintu](Screenshots/web-result1.png)
 *Deteksi perintah "Buka Pintu" dengan confidence score*
 
 ### Hasil Deteksi - Nyalakan Lampu
-![Hasil Nyalakan Lampu](Screenshoots/web-result2.png)
+![Hasil Nyalakan Lampu](Screenshots/web-result2.png)
 *Deteksi perintah "Nyalakan Lampu"*
 
 ### Hasil Deteksi - Panggil Bantuan
-![Hasil Panggil Bantuan](Screenshoots/web-result3.png)
+![Hasil Panggil Bantuan](Screenshots/web-result3.png)
 *Deteksi perintah "Panggil Bantuan" untuk kondisi darurat*
 
 ### Training di Teachable Machine
-![Training Model](Screenshoots/tm-training.jpeg)
+![Training Model](Screenshots/tm-training.jpeg)
 *Proses training model di Google Teachable Machine*
 
 ---
@@ -377,3 +377,4 @@ Terima kasih kepada:
 ![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=12Ndraaa.Asisten-Suara-Lansia)
 
 </div>
+
