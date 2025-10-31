@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asisten Suara untuk Lansia</title>
+    <link rel="shortcut icon" href="./assets/icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎤 Asisten Suara untuk Lansia</h1>
+        <p class="subtitle">Sistem Pengenalan Perintah Suara Berbasis AI dengan Simulasi Visual</p>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            Memuat model AI...
+        </div>
+
+        <div class="error" id="error"></div>
+
+        <div id="mainContent" style="display: none;">
+            <div class="main-content">
+                <div class="left-panel">
+                    <div class="mic-container">
+                        <button class="mic-button" id="micButton">
+                            <div class="mic-icon">🎙️</div>
+                        </button>
+                        <div class="status" id="status">Klik mikrofon untuk mulai</div>
+                    </div>
+
+                    <div class="predictions" id="predictionsPanel" style="display: none;">
+                        <h3>📊 Hasil Deteksi:</h3>
+                        <div id="predictionsList"></div>
+                    </div>
+
+                    <div class="history-log">
+                        <h4>📋 Riwayat Perintah:</h4>
+                        <div id="historyList">
+                            <p style="color: #9ca3af; text-align: center;">Belum ada perintah</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="simulation-panel">
+                    <div class="simulation-title" id="simTitle">💭 Simulasi Ruangan Lansia</div>
+                    <div class="room-simulation">
+                        <div class="door" id="door">
+                            <div class="door-knob"></div>
+                        </div>
+                        <div class="lamp" id="lamp"></div>
+                        <div class="alarm" id="alarm">🆘</div>
+                        <div class="action-text" id="actionText"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commands-info">
+                <h3>📋 6 Perintah yang Tersedia:</h3>
+                <div class="commands-list">
+                    <div class="command-item">🚪 Buka Pintu</div>
+                    <div class="command-item">🚪 Tutup Pintu</div>
+                    <div class="command-item">💡 Nyalakan Lampu</div>
+                    <div class="command-item">🆘 Panggil Bantuan</div>
+                    <div class="command-item">🔇 Background Noise</div>
+                    <div class="command-item">🤫 Silence</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@latest"></script>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
